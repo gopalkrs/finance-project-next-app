@@ -3,6 +3,8 @@ import {ClerkProvider } from "@clerk/nextjs"
 import { Lato } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import { Toaster } from "sonner";
+//import { Toaster } from "@/components/ui/sonner";
 
 const lato = Lato(
   { weight: '400'}
@@ -24,6 +26,7 @@ export default function RootLayout({
       <body className={`${lato.className}`}>
         <Header />
         <main className="min-h-screen">{children}</main>
+        <Toaster richColors />
         {/* footer */}
         <footer className="bg-blue-50 py-12">
           <div className="container mx-auto px-4 text-center text-gray-600">
