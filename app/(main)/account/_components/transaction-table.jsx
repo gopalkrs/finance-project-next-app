@@ -70,8 +70,6 @@ const TransactionTable = ({ transactions }) => {
     fn : deletedFn
   } = useFetch(deleteBulkTransactions);
 
-
-
   const [searchTerm, setSearchTerm] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
   const [recurringFilter, setRecurringFilter] = useState("");
@@ -336,10 +334,7 @@ const TransactionTable = ({ transactions }) => {
                             <div>
                               <div>Next Date :</div>
                               <div>
-                                {format(
-                                  addMonths(new Date(transaction.date), 1),
-                                  "PP"
-                                )}
+                                {format(new Date(transaction.lastProcessed), "PP")}
                               </div>
                             </div>
                           </TooltipContent>

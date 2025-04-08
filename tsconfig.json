@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "data/landing.js", "lib/prisma.js", "lib/checkUser.ts", "actions/dashboard.js", "app/(main)/account/_components/transaction-table.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "data/landing.js", "lib/prisma.js", "lib/checkUser.ts", "actions/dashboard.js", "app/(main)/account/_components/transaction-table.jsx", "app/(main)/dashboard/page.jsx", "app/(main)/transaction/create/page.jsx"],
   "exclude": ["node_modules"]
 }
