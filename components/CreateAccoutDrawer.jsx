@@ -20,11 +20,7 @@ import { Loader2 } from 'lucide-react';
 import { toast } from 'sonner';
 import { createAccount } from '@/actions/dashboard';
 
-interface ChildProps {
-    children: React.ReactNode
-}
-
-const CreateAccountDrawer = ({ children }: ChildProps) => {
+const CreateAccountDrawer = ({ children }) => {
 
     const [open, setOpen] = useState(false);
     const { loading: createAccountLoading, 
@@ -43,7 +39,7 @@ const CreateAccountDrawer = ({ children }: ChildProps) => {
         }
     })
 
-    const onSubmit = async (data : any) =>{
+    const onSubmit = async (data) =>{
         console.log(data);
         await createAccountFn(data);
     }
