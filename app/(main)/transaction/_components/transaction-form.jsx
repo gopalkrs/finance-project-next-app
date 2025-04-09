@@ -45,7 +45,7 @@ const AddTransactionForm = ({ accounts, categories }) => {
       type: "EXPENSE",
       amount: "",
       description: "",
-      accountId: accounts.find((ac) => ac.isDefault)?.id,
+      accountId: accounts?.find((ac) => ac.isDefault)?.id,
       date: new Date(),
       isRecurring: false,
     },
