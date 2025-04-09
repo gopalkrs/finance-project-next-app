@@ -6,7 +6,7 @@ import AccountChart from '../_components/account-chart';
 
 import { BarLoader } from 'react-spinners';
 
-const Account = async ({ params } : {params : {id : string}}) => {
+const Account = async ({ params } ) => {
 
   const {id} = await params;
   const accountsData = await getAccountWithTransaction(id);
