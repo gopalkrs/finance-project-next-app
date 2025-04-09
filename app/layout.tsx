@@ -11,7 +11,7 @@ const lato = Lato(
 );
 
 export const metadata: Metadata = {
-  title: "DayBit",
+  title: "Debbit",
   description: "One stop finance platform",
 };
 
