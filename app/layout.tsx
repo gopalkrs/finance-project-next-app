@@ -7,7 +7,10 @@ import { Toaster } from "sonner";
 //import { Toaster } from "@/components/ui/sonner";
 
 const lato = Lato(
-  { weight: '400'}
+  { 
+    weight: '400',
+    subsets : ['latin']
+  }
 );
 
 export const metadata: Metadata = {
