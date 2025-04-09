@@ -104,10 +104,7 @@ const BudgetProgress = ({ initialBudget, currentExpenses }) => {
             {initialBudget && (
                 <div className="space-y-2">
                     <Progress value={percentageUsed} 
-                    extraStyles = {`${
-                        percentageUsed >= 90 ? "bg-red-500" 
-                        : percentageUsed >= 75 ? "bg-yellow-500"
-                        : "bg-green-500" }`} 
+                    
                     />
                 </div>
             )}
