@@ -5,16 +5,19 @@ import TransactionTable from '../_components/transaction-table';
 import AccountChart from '../_components/account-chart';
 
 import { BarLoader } from 'react-spinners';
+import { Button } from '@/components/ui/button';
 
 const Account = async ({ params } ) => {
 
   const {id} = await params;
+
   const accountsData = await getAccountWithTransaction(id);
   if (!accountsData) {
     notFound();
   }
 
-  const { transactions, ...account } = accountsData;
+const { transactions, ...account } = accountsData;
+
   return (
     <div className='px-5 space-y-2'>
       <div className='flex items-end justify-between gap-4'>
@@ -34,9 +37,10 @@ const Account = async ({ params } ) => {
 
       {/* Transaction Table */}
       <Suspense fallback={<BarLoader width={"100%"} className='mt-4' color='#9333ea' />}>
-        <TransactionTable transactions={transactions} />
+        <TransactionTable 
+          transactions={transactions} 
+        />
       </Suspense>
-
     </div>
   )
 }
