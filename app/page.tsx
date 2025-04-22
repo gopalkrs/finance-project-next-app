@@ -88,7 +88,7 @@ export default function Home() {
       <section className="py-20 bg-blue-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-semibold text-center mb-4">Ready to take control of your finances?</h2>
-          <p className="text-blue-100 mb-4 max-w-2xl mx-auto">Join thousands of users who are managing their finances with Welth.</p>
+          <p className="text-blue-100 mb-4 max-w-2xl mx-auto">Join thousands of users who are managing their finances with Debbit.</p>
           <Link href='/dashboard'>
             <Button size={"lg"} className="bg-white text-blue-600 hover:bg-blue-50 animate-bounce">
               Get Started
