@@ -49,37 +49,33 @@ https://debbit-app.vercel.app/
 
 🧑‍💻 Getting Started Locally
 1️⃣ Clone the repository
-bash
-Copy
-Edit
+```
 git clone https://github.com/gopalkrs/finance-project-next-app.git
 cd finance-project-next-app
+```
 2️⃣ Install dependencies
-bash
-Copy
-Edit
+```
 npm install
-# or
+or
 yarn install
+```
+
+
 3️⃣ Configure Environment Variables
 Create a .env.local file in the root directory with necessary credentials:
 
-env
-Copy
-Edit
 DATABASE_URL=your_postgres_connection_string
 NEXTAUTH_SECRET=your_nextauth_secret
 GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 GITHUB_CLIENT_ID=your_github_client_id
 GITHUB_CLIENT_SECRET=your_github_client_secret
+
 4️⃣ Run the development server
-bash
-Copy
-Edit
-npm run dev
-# or
-yarn dev
+```
+npm run dev or yarn dev
+```
+
 🏷️ Why this project?
 This project demonstrates:
 
